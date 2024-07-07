@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 
 from pathlib import Path
 
-from pathlib import Path
+# from pathlib import Path
 
 file_path = Path('/path/to/your/file.txt')
 # len(file_path)
