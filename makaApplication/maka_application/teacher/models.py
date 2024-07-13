@@ -7,9 +7,8 @@ class Teacher(models.Model):
     last_name = models.CharField(max_length=20)
     teacher_image = models.ImageField()
     email = models.EmailField()
-    course_taught_id = models.ForeignKey(Course, default=None, on_delete=models.CASCADE, related_name='course_taught_id')
     gender = models.CharField(max_length=10)
-    subject_specialisation = models.CharField(max_length=30)
+    subject_specialisation = models.ForeignKey(Course, default=None, on_delete=models.CASCADE, related_name='subject_specialisation')
     bio = models.TextField()
     education_level = models.CharField(max_length=20)
     
